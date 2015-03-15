@@ -27,7 +27,7 @@ public class DetailsActivity extends ActionBarActivity {
         ivProfile = (ImageView) findViewById(R.id.ivProfile);
         tvName = (TextView) findViewById(R.id.tvName);
         tvPhone = (TextView) findViewById(R.id.tvPhone);
-        vPalette = (View) findViewById(R.id.vPalette);
+        vPalette = findViewById(R.id.vPalette);
 
         // Extract contact from bundle
         mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
