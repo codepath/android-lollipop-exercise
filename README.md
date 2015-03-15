@@ -21,13 +21,16 @@ The app does the following:
 
 1. It uses a `RecyclerView` to display a list of contacts.
 2. `CardView` is used to display each contact in the list.
-3. Adds ripple effect to `CardView` to provide touch feedback.
-4. Uses `Palette` to add dynamic color to contact item's background. It also uses this color as the accent color for the views in details screen.
-5. Adds shared element activity transition to provide a seamless experience by emphasizing continuity between activity transitions.
-6. Adds a floating action button, clicking on which enables you to directly place a call to your contact.
+
+Suggested extensions:
+
+1. Add ripple effect to `CardView` to provide touch feedback.
+2. Use `Palette` to add dynamic color to contact item's background. Use the same color as the accent color for the views in details screen.
+3. Add shared element activity transition to provide a seamless experience by emphasizing continuity between activity transitions.
+4. Add a floating action button, clicking on which should enable you to directly place a call to your contact.
 
 ## Libraries
 
 This app leverages the following third-party library:
 
- * [Picasso](http://square.github.io/picasso/) - For remote image loading
+ * [Picasso](http://square.github.io/picasso/) - For image loading

@@ -38,6 +38,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
     @Override
     public void onBindViewHolder(VH holder, int position) {
         Contact contact = mContacts.get(position);
+        holder.rootView.setTag(contact);
         holder.tvName.setText(contact.getName());
         Picasso.with(mContext).load(contact.getThumbnailDrawable()).into(holder.ivProfile);
     }
@@ -49,12 +50,14 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
 
     // Provide a reference to the views for each contact item
     public final static class VH extends RecyclerView.ViewHolder {
+        final View rootView;
         final ImageView ivProfile;
         final TextView tvName;
         final View vPalette;
 
         public VH(View itemView, final Context context) {
             super(itemView);
+            rootView = itemView;
             ivProfile = (ImageView)itemView.findViewById(R.id.ivProfile);
             tvName = (TextView)itemView.findViewById(R.id.tvName);
             vPalette = itemView.findViewById(R.id.vPalette);
