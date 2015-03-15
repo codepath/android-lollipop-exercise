@@ -4,7 +4,7 @@ Android app to use as the base app for implementing the following material widge
 
 * RecyclerView (the new ListView)
 * CardView (custom outline and shadow)
-* Ripple animations (touch feedback)
+* Ripple animation (touch feedback)
 * Palette (Incorporate dynamic color)
 * Shared Element Activity Transition
 * Floating Action Button
@@ -13,7 +13,11 @@ The app is composed of two screens. The first screen displays a list of contacts
 
 **Contact List**
 
+  ![Screenie|300](http://i.imgur.com/VSbsd4Gl.png)
+
 **Contact Details**
+
+  ![Screenie|300](http://i.imgur.com/NpKJJgdl.png)
 
 ## Overview
 

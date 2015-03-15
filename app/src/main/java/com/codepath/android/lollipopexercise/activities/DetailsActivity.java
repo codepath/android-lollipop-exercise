@@ -3,6 +3,7 @@ package com.codepath.android.lollipopexercise.activities;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ public class DetailsActivity extends ActionBarActivity {
     private ImageView ivProfile;
     private TextView tvName;
     private TextView tvPhone;
+    private View vPalette;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class DetailsActivity extends ActionBarActivity {
         ivProfile = (ImageView) findViewById(R.id.ivProfile);
         tvName = (TextView) findViewById(R.id.tvName);
         tvPhone = (TextView) findViewById(R.id.tvPhone);
+        vPalette = (View) findViewById(R.id.vPalette);
 
         // Extract contact from bundle
         mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
