@@ -1,5 +1,6 @@
 package com.codepath.android.lollipopexercise.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,10 +17,10 @@ import java.util.List;
 
 // Provide the underlying view for an individual list item.
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
-    private Context mContext;
+    private Activity mContext;
     private List<Contact> mContacts;
 
-    public ContactsAdapter(Context context, List<Contact> contacts) {
+    public ContactsAdapter(Activity context, List<Contact> contacts) {
         mContext = context;
         if (contacts == null) {
             throw new IllegalArgumentException("contacts must not be null");
