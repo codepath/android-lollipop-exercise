@@ -33,7 +33,7 @@ public class DetailsActivity extends AppCompatActivity {
         mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
 
         // Fill views with data
-        Picasso.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).into(ivProfile);
+        Picasso.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).fit().centerCrop().into(ivProfile);
         tvName.setText(mContact.getName());
         tvPhone.setText(mContact.getNumber());
     }
