@@ -1,9 +1,10 @@
 package com.codepath.android.lollipopexercise.models;
 
-import android.content.Context;
-import android.content.res.TypedArray;
-
 import com.codepath.android.lollipopexercise.R;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -51,13 +52,16 @@ public class Contact implements Serializable {
 
     // Returns a random contact
     public static Contact getRandomContact(Context context) {
-        TypedArray contactNames = context.getResources().obtainTypedArray(R.array.contact_names);
+
+        Resources resources = context.getResources();
+
+        TypedArray contactNames = resources.obtainTypedArray(R.array.contact_names);
         int name = (int) (Math.random() * contactNames.length());
 
-        TypedArray contactThumbnails = context.getResources().obtainTypedArray(R.array.contact_thumbnails);
+        TypedArray contactThumbnails = resources.obtainTypedArray(R.array.contact_thumbnails);
         int thumbnail = (int) (Math.random() * contactThumbnails.length());
 
-        TypedArray contactNumbers = context.getResources().obtainTypedArray(R.array.contact_numbers);
+        TypedArray contactNumbers = resources.obtainTypedArray(R.array.contact_numbers);
         int number = (int) (Math.random() * contactNumbers.length());
 
         return new Contact(contactNames.getString(name), contactThumbnails.getResourceId(thumbnail, R.drawable.contact_one), contactNumbers.getString(number));
