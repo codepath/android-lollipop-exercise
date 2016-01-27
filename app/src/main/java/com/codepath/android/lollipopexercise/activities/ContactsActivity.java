@@ -15,7 +15,9 @@ import java.util.List;
 
 
 public class ContactsActivity extends AppCompatActivity {
+    private RecyclerView rvContacts;
     private ContactsAdapter mAdapter;
+    private List<Contact> contacts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,7 @@ public class ContactsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contacts);
 
         // Find RecyclerView and bind to adapter
-        final RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvContacts);
+        rvContacts = (RecyclerView) findViewById(R.id.rvContacts);
 
         // allows for optimizations
         rvContacts.setHasFixedSize(true);
@@ -36,7 +38,7 @@ public class ContactsActivity extends AppCompatActivity {
         rvContacts.setLayoutManager(layout);
 
         // get data
-        List<Contact> contacts = Contact.getContacts();
+        contacts = Contact.getContacts();
 
         // Create an adapter
         mAdapter = new ContactsAdapter(ContactsActivity.this, contacts);
