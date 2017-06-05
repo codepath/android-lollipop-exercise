@@ -37,4 +37,4 @@ Suggested extensions:
 
 This app leverages the following third-party library:
 
- * [Picasso](http://square.github.io/picasso/) - For image loading
+ * [Glide](https://github.com/bumptech/glide) - For image loading

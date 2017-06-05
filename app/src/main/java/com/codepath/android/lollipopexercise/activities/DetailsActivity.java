@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.android.lollipopexercise.R;
 import com.codepath.android.lollipopexercise.models.Contact;
-import com.squareup.picasso.Picasso;
 
 public class DetailsActivity extends AppCompatActivity {
     public static final String EXTRA_CONTACT = "EXTRA_CONTACT";
@@ -33,7 +33,7 @@ public class DetailsActivity extends AppCompatActivity {
         mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
 
         // Fill views with data
-        Picasso.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).fit().centerCrop().into(ivProfile);
+        Glide.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).centerCrop().into(ivProfile);
         tvName.setText(mContact.getName());
         tvPhone.setText(mContact.getNumber());
     }
