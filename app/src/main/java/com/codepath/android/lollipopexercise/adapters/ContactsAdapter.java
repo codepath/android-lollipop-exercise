@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.android.lollipopexercise.R;
 import com.codepath.android.lollipopexercise.models.Contact;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -41,7 +41,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
         Contact contact = mContacts.get(position);
         holder.rootView.setTag(contact);
         holder.tvName.setText(contact.getName());
-        Picasso.with(mContext).load(contact.getThumbnailDrawable()).fit().centerCrop().into(holder.ivProfile);
+        Glide.with(mContext).load(contact.getThumbnailDrawable()).centerCrop().into(holder.ivProfile);
     }
 
     @Override
