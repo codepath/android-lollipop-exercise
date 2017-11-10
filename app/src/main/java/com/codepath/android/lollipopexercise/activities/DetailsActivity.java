@@ -1,6 +1,9 @@
 package com.codepath.android.lollipopexercise.activities;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,12 +15,18 @@ import com.codepath.android.lollipopexercise.R;
 import com.codepath.android.lollipopexercise.models.Contact;
 
 public class DetailsActivity extends AppCompatActivity {
-    public static final String EXTRA_CONTACT = "EXTRA_CONTACT";
+    private static final String EXTRA_CONTACT = "EXTRA_CONTACT";
     private Contact mContact;
     private ImageView ivProfile;
     private TextView tvName;
     private TextView tvPhone;
     private View vPalette;
+
+    public static void launch(@NonNull Contact contact, Context context) {
+        Intent intent = new Intent(context, DetailsActivity.class);
+        intent.putExtra(EXTRA_CONTACT, contact);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

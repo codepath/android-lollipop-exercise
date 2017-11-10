@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.android.lollipopexercise.R;
+import com.codepath.android.lollipopexercise.activities.DetailsActivity;
 import com.codepath.android.lollipopexercise.models.Contact;
 
 import java.util.List;
@@ -69,8 +70,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
                 public void onClick(View v) {
                     final Contact contact = (Contact)v.getTag();
                     if (contact != null) {
-                        // Fire an intent when a contact is selected
-                        // Pass contact object in the bundle and populate details activity.
+                        DetailsActivity.launch(contact, context);
                     }
                 }
             });
