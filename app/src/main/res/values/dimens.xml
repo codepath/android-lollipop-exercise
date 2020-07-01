@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="grid_margin">4dp</dimen>
+    <dimen name="cell_margin">16dp</dimen>
+    <dimen name="grid_profile_height">160dp</dimen>
+    <dimen name="palette_height">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="contact_detail_image_height">380dp</dimen>
+    <dimen name="contact_text_size">18sp</dimen>
+    <dimen name="contact_details_phone_margin_top">8dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
+</resources>

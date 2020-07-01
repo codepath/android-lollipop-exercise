@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactsActivity">
+
+    <item
+        android:id="@+id/miAdd"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Add"
+        app:showAsAction="always"
+        >
+
+    </item>
+</menu>
