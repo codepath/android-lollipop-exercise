@@ -37,16 +37,16 @@ public class Contact implements Serializable {
     // Returns a list of contacts
     public static List<Contact> getContacts() {
         List<Contact> contacts = new ArrayList<>();
-        contacts.add(new Contact("Adam", R.drawable.contact_one, "4153508881"));
-        contacts.add(new Contact("Sarah", R.drawable.contact_two, "4153508882"));
-        contacts.add(new Contact("Bob", R.drawable.contact_three, "4153508883"));
-        contacts.add(new Contact("John", R.drawable.contact_four, "4153508884"));
-        contacts.add(new Contact("Jill", R.drawable.contact_five, "4153508885"));
-        contacts.add(new Contact("Mark", R.drawable.contact_six, "4153508886"));
-        contacts.add(new Contact("Susan", R.drawable.contact_seven, "4153508887"));
-        contacts.add(new Contact("Ryan", R.drawable.contact_eight, "4153508888"));
-        contacts.add(new Contact("Jeff", R.drawable.contact_nine, "4153508889"));
-        contacts.add(new Contact("Eric", R.drawable.contact_ten, "4153508890"));
+        contacts.add(new Contact("Eric", R.drawable.contact_nine, "4153508889"));
+        contacts.add(new Contact("Victor", R.drawable.contact_four, "4153508884"));
+        contacts.add(new Contact("Kate", R.drawable.contact_two, "4153508882"));
+        contacts.add(new Contact("Anthony", R.drawable.contact_eight, "4153508888"));
+        contacts.add(new Contact("Ernest", R.drawable.contact_ten, "4153508890"));
+        contacts.add(new Contact("TJ", R.drawable.contact_three, "4153508883"));
+        contacts.add(new Contact("Lov", R.drawable.contact_five, "4153508885"));
+        contacts.add(new Contact("Jadal", R.drawable.contact_seven, "4153508887"));
+        contacts.add(new Contact("Yonathan", R.drawable.contact_one, "4153508881"));
+        contacts.add(new Contact("Rando", R.drawable.contact_six, "4153508886"));
         return contacts;
     }
 
