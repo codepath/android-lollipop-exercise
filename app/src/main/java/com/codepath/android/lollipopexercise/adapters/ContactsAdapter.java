@@ -51,7 +51,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.VH> {
     }
 
     // Provide a reference to the views for each contact item
-    public class VH extends RecyclerView.ViewHolder {
+    public static class VH extends RecyclerView.ViewHolder {
         final View rootView;
         final ImageView ivProfile;
         final TextView tvName;
