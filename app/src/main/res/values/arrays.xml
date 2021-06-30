@@ -24,6 +24,7 @@
         <item>@drawable/contact_eight</item>
         <item>@drawable/contact_nine</item>
         <item>@drawable/contact_ten</item>
+        <item>@drawable/contact_eleven</item>
     </array>
 
     <array name="contact_numbers">
